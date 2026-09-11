@@ -111,10 +111,10 @@ You can also install the runtime dependency with `pip`:
 pip install -r requirements.txt
 ```
 
-The default AI provider is local Ollama with the instruction-following `qwen2.5:7b-instruct` model. No hosted API or API key is required. Install Ollama, then download and run the model:
+The default AI provider is local Ollama with the lightweight `qwen2.5:3b` model. It is sized for CPU-only hackathon environments. No hosted API or API key is required. Install Ollama, then download and run the model:
 
 ```bash
-ollama run qwen2.5:7b-instruct
+ollama run qwen2.5:3b
 ```
 
 You can use Llama instead:
@@ -176,16 +176,16 @@ src/tests/test_core.py              Focused unit tests
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home-page.png)
+![Home Page](screenshots/landing.png)
 
 ### Certificate
 ![Certificate](screenshots/certificate.png)
 
 ### Beginner Quiz
-![Beginner Quiz](screenshots/beginner-quiz.png)
+![Beginner Quiz](screenshots/quiz.png)
 
 ### Lesson 1: Vision Anchor
-![Lesson 1: Vision Anchor](screenshots/lesson-1-vision-anchor.png)
+![Lesson 1: Vision Anchor](screenshots/lesson.png)
 
 
 ## Scope and roadmap
@@ -213,8 +213,10 @@ This is a functional beginner demo. It does not yet include accounts or authenti
 ### Models and Tools Used
 
 - **Ollama**
-	- Default tutor model: `qwen2.5:7b-instruct`
+	- Default tutor model: `qwen2.5:3b`
 	- Alternative tutor model: `llama3.1:8b-instruct`
+	- Qwen2.5:3B is lightweight and efficient, but may sometimes produce incomplete or overly simple responses.
+	- Scaffolding prompts are included to guide better outputs.
 - **Hugging Face Transformers**
   - Optional compatibility fallback: `distilgpt2`
   - Larger alternatives: `mistralai/Mistral-7B-v0.1` and `meta-llama/Llama-2-7b-chat-hf`

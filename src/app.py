@@ -77,6 +77,7 @@ def apply_style() -> None:
         }
         div[data-baseweb="select"] span, div[data-baseweb="select"] input,
         textarea, input { color: var(--white) !important; }
+        [data-testid="InputInstructions"] { display: none !important; }
         div[data-baseweb="select"] svg { fill: var(--gold) !important; }
         div[data-testid="stRadio"] label p { color: var(--white) !important; }
         div[data-testid="stRadio"] [data-checked="true"] { background: var(--gold) !important; }
@@ -323,6 +324,7 @@ def lesson_page(user_id: int) -> None:
             if detail:
                 st.markdown(detail)
         with st.form(f"lesson-{artifact_type}"):
+            st.subheader("Type your response or question here to interact with HAICAS AI.")
             content = st.text_area(f"✍️ {label}", key=f"input-{artifact_type}")
             generate_response = st.form_submit_button("Ask HAICAS AI")
             save_response = st.form_submit_button("Save lesson response")

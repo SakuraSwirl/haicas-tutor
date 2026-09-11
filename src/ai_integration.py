@@ -11,7 +11,7 @@ from functools import lru_cache
 from typing import Any
 
 AI_PROVIDER = os.getenv("HAICAS_AI_PROVIDER", "ollama").lower()
-MODEL_NAME = os.getenv("OLLAMA_MODEL", "qwen2.5:7b-instruct")
+MODEL_NAME = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
 HF_MODEL_NAME = os.getenv("HAICAS_MODEL", "distilgpt2")
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/generate")
 
@@ -82,7 +82,7 @@ def _clean_response(text: str) -> str:
 def _is_usable_response(text: str) -> bool:
     words = text.split()
     if (
-        len(words) < 20
+        len(words) < 8
         or text[:1] in ",.;:!?"
         or text.startswith("AI model is not available yet.")
     ):
