@@ -31,7 +31,7 @@ This software is proprietary and may not be copied, modified, or distributed wit
 AI adoption is high but shallow.
 
 - Stanford's 2026 AI Index reports that 88% of organizations have adopted AI, yet actual agent deployment across business functions remains in the single digits.
-- Traditional software shows its purpose: spreadsheets expose formulas and CRMs expose contacts. AI tools often present only a blank box. Unless people know what to ask, much of the capability stays hidden.
+- Traditional software shows its purpose: spreadsheets expose formulas and CRMs expose contacts. AI tools often present only a blank box. Unless people know what to ask, much of the capability sta[...]
 - Customers try AI for simple tasks such as rewriting emails or summarizing documents, then stop. They rarely explore deeper workflows while managing their day-to-day work.
 - Assuming customers will simply "figure it out" leaves value untapped and creates compliance risks.
 
@@ -175,17 +175,17 @@ src/tests/test_core.py              Focused unit tests
 
 ## Screenshots
 
-### Landing Page
-![Landing Page](screenshots/landing.png)
-
-### Lesson Screen
-![Lesson Screen](screenshots/lesson.png)
-
-### Quiz
-![Quiz](screenshots/quiz.png)
+### Home Page
+![Home Page](screenshots/home-page.png)
 
 ### Certificate
 ![Certificate](screenshots/certificate.png)
+
+### Beginner Quiz
+![Beginner Quiz](screenshots/beginner-quiz.png)
+
+### Lesson 1: Vision Anchor
+![Lesson 1: Vision Anchor](screenshots/lesson-1-vision-anchor.png)
 
 
 ## Scope and roadmap
