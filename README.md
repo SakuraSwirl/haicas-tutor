@@ -16,6 +16,12 @@ This repository contains a **demo version** of the HAICAS Tutor app.
 This demo was built for hackathon purposes and focuses on the **beginner course**.
 Future versions will expand to include Governance and Mastery tracks.
 
+## License
+
+Copyright © 2026 Annelize Wide.
+All rights reserved.
+This software is proprietary and may not be copied, modified, or distributed without explicit permission.
+
 ## Challenge
 
 **AI Adoption / Governance**

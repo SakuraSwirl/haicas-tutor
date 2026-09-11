@@ -2,6 +2,7 @@
 name = "haicas-tutor"
 version = "0.1.0"
 description = "A beginner learning companion for responsible human-AI co-assistance."
+license = { text = "Copyright © 2026 Annelize Wide. All rights reserved. This software is proprietary and may not be copied, modified, or distributed without explicit permission." }
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

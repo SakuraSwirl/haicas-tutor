@@ -121,7 +121,7 @@ def render_footer() -> None:
     st.markdown(
         """
         <div style="text-align: center; color: #C0C0C0; padding: 2rem 0 1rem; margin-top: 3rem; border-top: 1px solid #C0C0C0;">
-            © 2026 HAICAS Tutor · Beginner Demo · MIT License
+            © 2026 Annelize Wide · All rights reserved · Proprietary software
         </div>
         """,
         unsafe_allow_html=True,
