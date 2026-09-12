@@ -223,7 +223,6 @@ This is a functional beginner demo. It does not yet include accounts or authenti
 
 - **Microsoft Copilot:** Co-assistance partner for concept framing, pseudocode, README planning, and governance design.
 - **GitHub Copilot:** Assisted with converting pseudocode into Python, including the Streamlit app and modular files.
-- **AI design tools:** Used for logo concepts and certificate visual concepts.
 
 ### Tasks assisted
 
